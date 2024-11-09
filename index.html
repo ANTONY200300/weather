@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/012/066/499/original/sunny-and-rainy-day-weather-forecast-icon-meteorological-sign-3d-render-png.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url('https://www.meanstoexplore.com/wp-content/uploads/2020/04/Tower-of-London-at-night-scaled.jpg') no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center mt-1" style="color: white;">Weather</h1>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="city-name" type="text" class="form-control" placeholder="Search Here">
+                <div class="input-group-append">
+                    <button onclick="searchTemperature()" type="button" class="btn-warning">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="image-icon" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d58eb146152113.584973d61bdcf.gif" alt="" width="150px">
+            <h1 id="city">London</h1>
+            <h3><span id="temp">27</span>&deg;C</h3>
+            <h1 class="lead" id="weather">Clouds</h1>
+            <h6 style="color: rgb(255, 255, 255);">
+                Precipitation: 13%</h6>
+                <span style="color: white;">Humidity: 84%
+                  Wind: 8 km/h</span>
+        </div>
+    </div>
+<script src="/app.js "></script>
+</body>
+
+</html>
